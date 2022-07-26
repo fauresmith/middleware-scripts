@@ -9,18 +9,18 @@ pipeline {
         }
          stage('build') {
             steps {
-                echo 'Hello World'
-            }
+                echo 'build'
+            }   sleep 5
         }
          stage('test') {
             steps {
-                echo 'Hello World'
-            }
+                echo 'test'
+            }   sleep 5
         }
          stage('deploy') {
             steps {
-                echo 'Hello World'
-            }
+                echo 'deploy'
+            }   sleep 4
         }
     }
 }
